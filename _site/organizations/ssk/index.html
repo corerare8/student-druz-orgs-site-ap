@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ССК — Студенческие объединения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo" id="home-link"><img src="/images/site-logo.png" alt="СТУД" class="logo-icon">СТУД+Друзья</a>
+  </header>
+
+  <main>
+    <article class="org-page" style="--accent: #3355A8">
+  <a href="/" class="back-link">← Все объединения</a>
+
+  
+  <img src="/images/ssk-logo.png" alt="ССК" class="org-hero-img">
+  
+
+  <h1>ССК</h1>
+  
+  <div class="presentation-block">
+    <strong>Презентация</strong>
+    <span>📅 11.09</span>
+    <span>🕓 16:00</span>
+    <span>📍 Уточняется</span>
+  </div>
+  
+  
+
+  <p class="org-description">Студенческий спортивный клуб МГИМО — объединение студентов, которое развивает студенческий спорт и формирует активное спортивное сообщество. Мы организуем спортивные соревнования и массовые мероприятия, поддерживаем сборные команды МГИМО и создаём возможности для студентов проявить себя в различных спортивных направлениях. Среди наших проектов — Гонка МГИМО, ежегодная Спартакиада МГИМО среди факультетов, выездное мероприятие Health&amp;Fitness в Софрино, Кубок Ректора МГИМО по хоккею, турниры, тренировки и совместные мероприятия с партнёрами. Наша цель — сделать спорт неотъемлемой и доступной частью студенческой жизни МГИМО.</p>
+
+  
+
+  
+
+  <div class="social-links">
+    
+    
+    
+      <a href="https://t.me/sskmgimo" target="_blank" rel="noopener">Telegram</a>
+    
+    
+      <a href="https://m.vk.ru/mgimosportclub" target="_blank" rel="noopener">VK</a>
+    
+    
+      <a href="https://t.me/ssksupport" target="_blank" rel="noopener" class="support-link">Помощь: @ssksupport</a>
+    
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Сделано студентами для студентов ✦ 2026</p>
+  </footer>
+
+  <script>
+    document.getElementById('home-link').addEventListener('click', function (e) {
+      var onHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+      if (onHomePage) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  </script>
+</body>
+</html>

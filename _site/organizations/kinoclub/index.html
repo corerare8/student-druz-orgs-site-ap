@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КИНОКЛУБ — Студенческие объединения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo" id="home-link"><img src="/images/site-logo.png" alt="СТУД" class="logo-icon">СТУД+Друзья</a>
+  </header>
+
+  <main>
+    <article class="org-page" style="--accent: #E4572E">
+  <a href="/" class="back-link">← Все объединения</a>
+
+  
+  <img src="/images/kinoclub-logo.png" alt="КИНОКЛУБ" class="org-hero-img">
+  
+
+  <h1>КИНОКЛУБ</h1>
+  
+  <div class="note-block">Набора пока нет.</div>
+  
+
+  <p class="org-description">Мы развиваем культуру просмотра фильмов, учим замечать детали и погружаем в мир великих режиссеров. А ещё научим снимать всех желающих: разберем постановку кадра, лучшие приемы кинематографа и покажем, как применять их на практике.</p>
+
+  
+
+  
+
+  <div class="social-links">
+    
+    
+    
+      <a href="https://t.me/kkmgimo" target="_blank" rel="noopener">Telegram</a>
+    
+    
+    
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Сделано студентами для студентов ✦ 2026</p>
+  </footer>
+
+  <script>
+    document.getElementById('home-link').addEventListener('click', function (e) {
+      var onHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+      if (onHomePage) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  </script>
+</body>
+</html>

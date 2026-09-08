@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>НСО — Студенческие объединения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo" id="home-link"><img src="/images/site-logo.png" alt="СТУД" class="logo-icon">СТУД+Друзья</a>
+  </header>
+
+  <main>
+    <article class="org-page" style="--accent: #8A8A94">
+  <a href="/" class="back-link">← Все объединения</a>
+
+  
+  <img src="/images/nso-logo.png" alt="НСО" class="org-hero-img">
+  
+
+  <h1>НСО</h1>
+  
+  <div class="presentation-block">
+    <strong>Презентация</strong>
+    <span>📅 18.09</span>
+    <span>🕓 Уточняется</span>
+    <span>📍 Уточняется</span>
+  </div>
+  
+  
+
+  <p class="org-description">Научное студенческое общество МГИМО — пространство для амбициозных студентов, которые хотят развиваться в науке, создавать собственные проекты и уже в университете пробовать себя в будущей профессии! НСО объединяет 48 клубов двух направлений — функциональных и региональных, — поэтому каждый студент может найти свою сферу интересов и реализовать себя в ней. Участие в НСО позволяет соединить знания, полученные на парах, с практикой, исследовательской и проектной работой, а также получить ценный организаторский и профессиональный опыт.</p>
+
+  
+
+  
+
+  <div class="social-links">
+    
+    
+    
+      <a href="https://t.me/nsomgimo" target="_blank" rel="noopener">Telegram</a>
+    
+    
+      <a href="https://vk.ru/nso.mgimo" target="_blank" rel="noopener">VK</a>
+    
+    
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Сделано студентами для студентов ✦ 2026</p>
+  </footer>
+
+  <script>
+    document.getElementById('home-link').addEventListener('click', function (e) {
+      var onHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+      if (onHomePage) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  </script>
+</body>
+</html>

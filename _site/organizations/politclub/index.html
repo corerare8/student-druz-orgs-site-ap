@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ПОЛИТКЛУБ — Студенческие объединения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo" id="home-link"><img src="/images/site-logo.png" alt="СТУД" class="logo-icon">СТУД+Друзья</a>
+  </header>
+
+  <main>
+    <article class="org-page" style="--accent: #1B2452">
+  <a href="/" class="back-link">← Все объединения</a>
+
+  
+  <img src="/images/politclub-logo.png" alt="ПОЛИТКЛУБ" class="org-hero-img">
+  
+
+  <h1>ПОЛИТКЛУБ</h1>
+  
+  <div class="presentation-block">
+    <strong>Презентация</strong>
+    <span>📅 Уточняется</span>
+    <span>🕓 Уточняется</span>
+    <span>📍 Уточняется</span>
+  </div>
+  
+  
+
+  <p class="org-description">Политический клуб — это крупнейшее студенческое объединение нашего вуза, чья деятельность полностью посвящена политике России и международным отношениям, так что мы самым прямым образом помогаем студентам углублять их знания по профильным дисциплинам. Помимо этого, мы активно включены в жизнь факультета Международных отношений и факультета Управления и Политики: участвуем в организации «Недели МО» и форума «Дело Первых».</p>
+
+  
+  <div class="programs-list">
+    
+    <div class="program-item">
+      <h3>Школа дебатов</h3>
+      <p>Участники проводят дискуссии на политические темы, прокачивают ораторские навыки и погружаются в международный контекст.</p>
+    </div>
+    
+    <div class="program-item">
+      <h3>Модель Государственной думы</h3>
+      <p>Участники знакомились с депутатами различных фракций и сами пробовали себя в написании и принятии законопроектов.</p>
+    </div>
+    
+    <div class="program-item">
+      <h3>ПолитЛЕГО</h3>
+      <p>Участники разрабатывали собственные политические партии и выдвигали их на всеобщее голосование.</p>
+    </div>
+    
+  </div>
+  
+
+  
+  <ul class="highlights-list">
+    
+    <li>Анатолий Вассерман</li>
+    
+    <li>Мария Киселёва, ведущая «Слабого звена»</li>
+    
+    <li>Андрей Свинцов и другие депутаты Государственной Думы</li>
+    
+  </ul>
+  
+
+  <div class="social-links">
+    
+    
+    
+      <a href="https://t.me/politclubmg" target="_blank" rel="noopener">Telegram</a>
+    
+    
+      <a href="https://vk.ru/politclub" target="_blank" rel="noopener">VK</a>
+    
+    
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Сделано студентами для студентов ✦ 2026</p>
+  </footer>
+
+  <script>
+    document.getElementById('home-link').addEventListener('click', function (e) {
+      var onHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+      if (onHomePage) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  </script>
+</body>
+</html>

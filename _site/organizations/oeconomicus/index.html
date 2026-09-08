@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OECONOMICUS — Студенческие объединения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo" id="home-link"><img src="/images/site-logo.png" alt="СТУД" class="logo-icon">СТУД+Друзья</a>
+  </header>
+
+  <main>
+    <article class="org-page" style="--accent: #C9B18C">
+  <a href="/" class="back-link">← Все объединения</a>
+
+  
+  <img src="/images/oeconomicus-logo.png" alt="OECONOMICUS" class="org-hero-img">
+  
+
+  <h1>OECONOMICUS</h1>
+  
+  <div class="presentation-block">
+    <strong>Презентация</strong>
+    <span>📅 ≈ 22–23 сентября</span>
+    <span>🕓 Уточняется</span>
+    <span>📍 Уточняется</span>
+  </div>
+  
+  
+
+  <p class="org-description">Экономический клуб МГИМО OECONOMICUS — главный клуб факультета МЭО, крупнейшее сообщество для тех, кто хочет понимать изменение ключевой ставки, разбираться в финтехе, инвестициях и мировой экономике. Более 5 форумов в Москве и на международных площадках, десятки мероприятий каждый год — от квизов и лекций до кейс-чемпионатов и научных конференций, а также большая дружная команда. Мы всегда открыты для новых знакомств и будем рады видеть вас среди активистов Экономического клуба!</p>
+
+  
+
+  
+
+  <div class="social-links">
+    
+    
+    
+      <a href="https://t.me/oeconomicus" target="_blank" rel="noopener">Telegram</a>
+    
+    
+      <a href="https://vk.ru/oeconomicus" target="_blank" rel="noopener">VK</a>
+    
+    
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Сделано студентами для студентов ✦ 2026</p>
+  </footer>
+
+  <script>
+    document.getElementById('home-link').addEventListener('click', function (e) {
+      var onHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+      if (onHomePage) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  </script>
+</body>
+</html>

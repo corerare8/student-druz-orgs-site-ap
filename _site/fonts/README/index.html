@@ -1,0 +1,10 @@
+<h1>Шрифты Actay</h1>
+<p>CSS уже настроен на использование шрифтов <strong>Actay</strong> (основной текст) и <strong>Actay Wide</strong> (заголовки) через <code>@font-face</code> в <code>style.css</code>.</p>
+<p>Сами файлы шрифта сюда не включены (Actay — коммерческий/лицензируемый шрифт, у меня нет доступа к его дистрибутиву). Чтобы шрифты заработали, добавьте в эту папку следующие файлы (в форматах woff2 и woff):</p>
+<ul>
+<li><code>Actay-Regular.woff2</code> / <code>Actay-Regular.woff</code> — для основного текста</li>
+<li><code>ActayWide-Bold.woff2</code> / <code>ActayWide-Bold.woff</code> — для заголовков (жирное начертание)</li>
+<li><code>ActayWide-Regular.woff2</code> / <code>ActayWide-Regular.woff</code> — для заголовков (обычное начертание, опционально)</li>
+</ul>
+<p>Пути в CSS: <code>/fonts/Actay-Regular.woff2</code> и т.д. — т.е. файлы должны лежать по адресу <code>src/fonts/...</code> (после сборки — <code>_site/fonts/...</code>).</p>
+<p>Пока файлов нет, сайт автоматически использует шрифт <strong>Manrope</strong> (Google Fonts) как запасной — выглядит похоже, сайт не сломается.</p>

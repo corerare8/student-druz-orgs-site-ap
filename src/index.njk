@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: Главная
+---
+<section class="hero">
+  <h1>Найди своих людей</h1>
+  <p>Все студенческие объединения университета — в одном месте.</p>
+</section>
+
+<section class="grid">
+  {% for org in organizations %}
+  <a class="card" href="/organizations/{{ org.slug }}/" style="--accent: {{ org.color }}">
+    {% if org.image %}
+    <img src="{{ org.image }}" alt="{{ org.name }}" class="card-img" loading="lazy">
+    {% else %}
+    <div class="card-img card-img-placeholder">{{ org.name | first }}</div>
+    {% endif %}
+    <div class="card-body">
+      <h2>{{ org.name }}</h2>
+      <p>{{ org.shortDescription }}</p>
+      {% if org.presentation %}
+      <div class="presentation-badge">
+        📅 {{ org.presentation.date }} · {{ org.presentation.time }} · {{ org.presentation.place }}
+      </div>
+      {% elif org.note %}
+      <div class="note-badge">{{ org.note }}</div>
+      {% endif %}
+      <span class="card-cta">Подробнее →</span>
+    </div>
+  </a>
+  {% endfor %}
+</section>

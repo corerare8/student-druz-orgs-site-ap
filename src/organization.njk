@@ -1,0 +1,73 @@
+---
+layout: base.njk
+pagination:
+  data: organizations
+  size: 1
+  alias: org
+permalink: "/organizations/{{ org.slug }}/"
+eleventyComputed:
+  title: "{{ org.name }}"
+---
+<article class="org-page" style="--accent: {{ org.color }}">
+  <a href="/" class="back-link">← Все объединения</a>
+
+  {% if org.image %}
+  <img src="{{ org.image }}" alt="{{ org.name }}" class="org-hero-img">
+  {% else %}
+  <div class="org-hero-img org-hero-placeholder">{{ org.name | first }}</div>
+  {% endif %}
+
+  <h1>{{ org.name }}</h1>
+  {% if org.presentation %}
+  <div class="presentation-block">
+    <strong>Презентация</strong>
+    <span>📅 {{ org.presentation.date }}</span>
+    <span>🕓 {{ org.presentation.time }}</span>
+    <span>📍 {{ org.presentation.place }}</span>
+  </div>
+  {% if org.registration %}
+  <a href="{{ org.registration.url }}" target="_blank" rel="noopener" class="registration-cta">{{ org.registration.label }}</a>
+  {% endif %}
+  {% elif org.note %}
+  <div class="note-block">{{ org.note }}</div>
+  {% endif %}
+
+  <p class="org-description">{{ org.description }}</p>
+
+  {% if org.programs %}
+  <div class="programs-list">
+    {% for program in org.programs %}
+    <div class="program-item">
+      <h3>{{ program.title }}</h3>
+      <p>{{ program.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if org.highlights %}
+  <ul class="highlights-list">
+    {% for item in org.highlights %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="social-links">
+    {% if org.social.website %}
+      <a href="{{ org.social.website }}" target="_blank" rel="noopener">Сайт</a>
+    {% endif %}
+    {% if org.social.instagram %}
+      <a href="{{ org.social.instagram }}" target="_blank" rel="noopener">Instagram</a>
+    {% endif %}
+    {% if org.social.telegram %}
+      <a href="{{ org.social.telegram }}" target="_blank" rel="noopener">Telegram</a>
+    {% endif %}
+    {% if org.social.vk %}
+      <a href="{{ org.social.vk }}" target="_blank" rel="noopener">VK</a>
+    {% endif %}
+    {% if org.support %}
+      <a href="{{ org.support.url }}" target="_blank" rel="noopener" class="support-link">{{ org.support.label }}</a>
+    {% endif %}
+  </div>
+</article>
